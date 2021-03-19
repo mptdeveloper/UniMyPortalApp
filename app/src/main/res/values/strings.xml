@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">My Student Portal</string>
+    <string name="login_or">or</string>
+    <string name="login_button_login">Login</string>
+    <string name="login_create_account">Create Account</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="create_account_Name_hint">Full Name</string>
+    <string name="create_account_Email_hint">Email</string>
+    <string name="create_account_password">Password</string>
+    <string name="create_account_studentID">Student ID</string>
+    <string name="create_account_saveButton">Create Account</string>
+    <string name="Sign_out">Sign out</string>
+    <string name="menu_title">Add Book</string>
+    <string name="book_sale_list_empty">No Books To Show</string>
+    <string name="by_nora_barrett">By Nora Barrett</string>
+    <string name="item_row_pages">pages</string>
+    <string name="edition">Edition</string>
+    <string name="item_row_seller">Seller Name</string>
+    <string name="item_row_current_user">Current User</string>
+    <string name="item_row_pages_number">Pages Number</string>
+    <string name="item_row_edition">Edition</string>
+    <string name="item_row_dateOfPost">Date Posted</string>
+    <string name="item_row_Date">"Date posted: "</string>
+    <string name="item_row_contact">Contact Seller</string>
+    <string name="post_book_title">Title</string>
+    <string name="post_book_author">Author</string>
+    <string name="post_book_edition">Edition</string>
+    <string name="post_book_isbn">ISBN</string>
+    <string name="post_book_description">Description</string>
+    <string name="post_book_pages">Number of Pages</string>
+    <string name="post_book_seller_name">"Seller Name: "</string>
+    <string name="post_book_saveButton">Save</string>
+    <string name="launcher_welcome">Welcome</string>
+    <string name="launcher_app_name">My Student Portal</string>
+    <string name="launcher_button_get_started">Get Started</string>
+
+</resources>

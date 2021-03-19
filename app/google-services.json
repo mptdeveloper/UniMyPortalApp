@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "727977112478",
+    "project_id": "unimyportalapp-616e3",
+    "storage_bucket": "unimyportalapp-616e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727977112478:android:3ee4de9f60203d92a7dc8f",
+        "android_client_info": {
+          "package_name": "co.uk.bawmpt.unimyportalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727977112478-dgbsfu0cj2umo4s4mapuq6nii03ur94j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.uk.bawmpt.unimyportalapp",
+            "certificate_hash": "a22475074a5dc591e13f1579f65e520818537200"
+          }
+        },
+        {
+          "client_id": "727977112478-7nv20kikjijllucutiikc9ffr9465v6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFHL9XljOCfG-2kDgnYphygSJ6Av9jGXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727977112478-7nv20kikjijllucutiikc9ffr9465v6q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

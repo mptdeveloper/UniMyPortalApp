@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.DashboardActivity"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="4"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false">
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/dashButtonTimeTable"
+                        android:layout_width="match_parent"
+                        android:layout_height="127dp"
+                        android:background="@drawable/timetable">
+
+                    </ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:text="Time table"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/floor_plan"
+                        android:id="@+id/dashButtonFloorPlan">
+
+                    </ImageButton>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Floor plan"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/library"
+                        android:id="@+id/dashButtonLibrary">
+
+                    </ImageButton>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Library"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/booksale"
+                        android:id="@+id/dashButtonBookSale">
+
+                    </ImageButton>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Book sale"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/forum"
+                        android:id="@+id/dashButtonForum">
+
+                    </ImageButton>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Forum"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/activity"
+                        android:id="@+id/dashButtonActivities">
+
+                    </ImageButton>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Activitie"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:background="@drawable/messages"
+                        android:id="@+id/dashButtonMyMessages">
+
+                    </ImageButton>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="MyMessages"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:text="About us   "
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:text="  Contact us"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
