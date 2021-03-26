@@ -9,9 +9,13 @@ import android.widget.Button;
 
 import co.uk.bawmpt.unimyportalapp.R;
 
+/*
+Main Activity is launcher class and is the first thing a user can see after clicking on the icon
+ */
+
 public class MainActivity extends AppCompatActivity {
 
-
+    //Declaring button widget used in this Activity:
     private Button getStartedButton;
 
     @Override
@@ -19,8 +23,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Initialise button widget to to be seen by corresponding Java Class:
         getStartedButton = findViewById(R.id.startButton);
 
+
+        //Set OnCLickListener on the button widget:
         getStartedButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

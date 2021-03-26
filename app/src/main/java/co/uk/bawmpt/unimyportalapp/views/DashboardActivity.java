@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,6 +19,7 @@ import co.uk.bawmpt.unimyportalapp.R;
 public class DashboardActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ImageButton dashTimeTable;
+    private ImageButton dashMoodle;
     private ImageButton dashFloorPlan;
     private ImageButton dashLibrary;
     private ImageButton dashBookSale;
@@ -36,6 +38,8 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
         dashTimeTable = findViewById(R.id.dashButtonTimeTable);
         dashTimeTable.setOnClickListener(this);
+        dashMoodle = findViewById(R.id.dashButtonMoodle);
+        dashMoodle.setOnClickListener(this);
         dashFloorPlan = findViewById(R.id.dashButtonFloorPlan);
         dashFloorPlan.setOnClickListener(this);
         dashLibrary = findViewById(R.id.dashButtonLibrary);
@@ -79,8 +83,14 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.dashButtonTimeTable:
-                //Moving user to TimeTableActivities:
-                startActivity(new Intent(DashboardActivity.this, TimeTableActivity.class));
+                //Moving user to built in browser and open "Semestry" login page:
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://ttportalqalive.com/2021/studentlogin.html")));
+                break;
+            case R.id.dashButtonMoodle:
+                //This button will take user to Moodle Login page using in device browser:
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://partnerships.moodle.roehampton.ac.uk/login/index.php")));
                 break;
             case R.id.dashButtonFloorPlan:
                 //This button will take user to Floor Plan of Campuses:

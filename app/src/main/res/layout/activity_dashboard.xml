@@ -48,7 +48,40 @@
                         android:layout_height="30dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="20dp"
-                        android:text="Time table"
+                        android:text="@string/dashboard_button_timetable"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/dashButtonMoodle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/images">
+                    </ImageButton>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/dashboard_button_moodle"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="24dp" />
@@ -74,12 +107,13 @@
                         android:id="@+id/dashButtonFloorPlan">
 
                     </ImageButton>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="28dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="10dp"
-                        android:text="Floor plan"
+                        android:text="@string/dashboard_button_floor"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="24dp" />
@@ -104,12 +138,13 @@
                         android:id="@+id/dashButtonLibrary">
 
                     </ImageButton>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="28dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="10dp"
-                        android:text="Library"
+                        android:text="@string/dashboard_button_library"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="24dp" />
@@ -134,12 +169,13 @@
                         android:id="@+id/dashButtonBookSale">
 
                     </ImageButton>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="28dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="10dp"
-                        android:text="Book sale"
+                        android:text="@string/dashboard_button_book_sale"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="24dp" />
@@ -164,12 +200,13 @@
                         android:id="@+id/dashButtonForum">
 
                     </ImageButton>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="28dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="10dp"
-                        android:text="Forum"
+                        android:text="@string/dashboard_button_forum"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="24dp" />
@@ -194,12 +231,13 @@
                         android:id="@+id/dashButtonActivities">
 
                     </ImageButton>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="28dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="10dp"
-                        android:text="Activitie"
+                        android:text="@string/dashboard_button_activities"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="24dp" />
@@ -224,42 +262,45 @@
                         android:id="@+id/dashButtonMyMessages">
 
                     </ImageButton>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="31dp"
                         android:layout_gravity="center"
                         android:layout_marginBottom="10dp"
-                        android:text="MyMessages"
+                        android:text="@string/dashboard_button_mymessages"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="24dp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
+
         </GridLayout>
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="15dp"
-                android:text="About us   "
-                android:textAlignment="center"
-                android:textColor="@color/blue"
-                android:textSize="24dp" />
+            android:gravity="center"
+            android:elevation="1dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="15dp"
-                android:text="  Contact us"
-                android:textAlignment="center"
+                android:text="@string/dashboard_button_about_us"
                 android:textColor="@color/blue"
-                android:textSize="24dp" />
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:text="@string/dashboard_button_contact_us"
+                android:textColor="@color/blue"
+                android:textSize="24dp"/>
 
         </LinearLayout>
     </LinearLayout>

@@ -13,17 +13,15 @@ import com.google.firebase.auth.FirebaseUser;
 
 import co.uk.bawmpt.unimyportalapp.R;
 
-public class ForumActivity extends AppCompatActivity {
-
+public class LibraryMyReservationActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
     private FirebaseUser user;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forum);
+        setContentView(R.layout.activity_library_my_reservation);
 
         firebaseAuth = FirebaseAuth.getInstance();
         user = firebaseAuth.getCurrentUser();
@@ -43,7 +41,7 @@ public class ForumActivity extends AppCompatActivity {
                 //This option menu will Sign Out user:
                 if (user != null && firebaseAuth != null) {
                     firebaseAuth.signOut();
-                    startActivity(new Intent(ForumActivity.this,
+                    startActivity(new Intent(LibraryMyReservationActivity.this,
                             MainActivity.class));
                     finish();
                 }

@@ -33,6 +33,9 @@ import co.uk.bawmpt.unimyportalapp.util.UserApi;
 
 public class CreateAccountActivity extends AppCompatActivity {
 
+    /*
+    Declaration of the widgets used in this Activity
+     */
     private EditText fullNameEditText;
     private EditText emailEditText;
     private EditText passwordEditText;
@@ -52,6 +55,9 @@ public class CreateAccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
 
+        /*
+        Initializations of the widgets and Firebase Authentication:
+         */
         fullNameEditText = findViewById(R.id.createAccountName);
         emailEditText = findViewById(R.id.createAccountEmail);
         passwordEditText = findViewById(R.id.createAccountPassword);
@@ -71,6 +77,10 @@ public class CreateAccountActivity extends AppCompatActivity {
                 }
             }
         };
+        /*
+        Set OnClickListener on "Create Account" button and calling the method to register
+        and save user as an object in Firebase:
+         */
         createAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,11 +106,14 @@ public class CreateAccountActivity extends AppCompatActivity {
         });
     }
 
+    /*
+    Creating method to register and save user in Firebase Firestore Cloud Database:
+     */
     private void CreateUserAccount(String fullName, String email, String password, String studentId) {
         if (!TextUtils.isEmpty(fullName) && !TextUtils.isEmpty(email)
                 && !TextUtils.isEmpty(password) && !TextUtils.isEmpty(studentId)) {
 
-            //Todo: Can set progress bar here !!!
+            progressBar.setVisibility(View.VISIBLE);
 
             firebaseAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -127,20 +140,20 @@ public class CreateAccountActivity extends AppCompatActivity {
                                                         .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                                                             @Override
                                                             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                                                                if (Objects.requireNonNull(task).getResult().exists()) {
+                                                                if (Objects.requireNonNull(task.getResult()).exists()) {
 
                                                                     progressBar.setVisibility(View.INVISIBLE);
 
-                                                                    String name = task.getResult().getString("Full Name");
+                                                                    String name = task.getResult().getString("Name");
 
                                                                     UserApi userApi = UserApi.getInstance();
                                                                     userApi.setUserId(currentUserId);
-                                                                    userApi.setUsername(name);
+                                                                    userApi.setName(name);
 
                                                                     Intent intent = new Intent(CreateAccountActivity.this,
-                                                                            MainActivity.class);
-                                                                    intent.putExtra("username", name);
-                                                                    intent.putExtra("userId", currentUserId);
+                                                                            LoginActivity.class);
+                                                                    intent.putExtra("Name", name);
+                                                                    intent.putExtra("UserId", currentUserId);
                                                                     startActivity(intent);
                                                                 }
                                                                 else {
@@ -169,6 +182,10 @@ public class CreateAccountActivity extends AppCompatActivity {
         }
     }
 
+    /*
+    Overridden onStart method to authenticate user and hold as variable as current user,
+    Set AuthStateListener:
+     */
     @Override
     protected void onStart() {
         super.onStart();
